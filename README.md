@@ -2,6 +2,10 @@
 
 Amazon Q adaptation of the [Flux Compound Engineering Framework](https://github.com/carveragents/flux).
 
+## Acknowledgments
+
+This project is based on the [Flux Compound Engineering Framework](https://github.com/carveragents/flux) by Carver Agents. Flux provides a structured approach to AI-assisted software development through session management, repository initialization, and git workflow automation. This adaptation brings Flux's powerful workflow patterns to Amazon Q Developer.
+
 ## Installation
 
 ```bash
