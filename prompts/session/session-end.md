@@ -49,30 +49,38 @@ Session ended: [timestamp]
 
 ### Step 4: Capture Lessons Learned
 
-Review the session for valuable learnings. Update `docs/LESSONS.md`:
+Update `docs/LESSONS.md`:
 
-Under the `# SESSIONS` section, add:
-```markdown
-## [Session Name] - [Date]
-[Brief summary of what was done]
-```
+- If `docs/LESSONS.md` does not exist, create it with two empty sections: `# SESSIONS` and `# LESSONS`
+- Append the active session label under `# SESSIONS`
+- For the `# LESSONS` section:
+  - Extract lessons from this session: problems encountered, solutions found, user corrections/guidance during the session
+  - Select AT MOST 3 lessons. Prefer lessons:
+    - Where the user intervened to guide direction or correct a mistake
+    - That apply across projects, not just this one
+  - Read the existing `# LESSONS` section thoroughly and compare each candidate lesson against existing ones
+  - For each candidate:
+    - If similar to an existing lesson → merge/enhance the existing entry with new details
+    - If completely unique → add it
+  - Each lesson must be concise: one sentence each for "Problem", "Mitigation", and "Lesson learned"
+  - Replace the entire `# LESSONS` section with the consolidated result — do NOT just append
 
-Under the `# LESSONS` section, add any new lessons:
-```markdown
-## [Lesson Title]
-**Context**: [When this applies]
-**Issue**: [What problem was encountered]
-**Solution**: [How it was resolved]
-**Prevention**: [How to avoid in future]
-```
+### Step 5: Update docs/README.md
 
-Only add lessons that would be valuable for future sessions. Not every session needs new lessons.
+- The README must be a reference-style document: a pointer to information in `docs/`, not a duplicate of it
+- If `docs/README.md` does not exist:
+  - Read all documents under `docs/` and subfolders
+  - Create `docs/README.md` referencing all of them
+- If `docs/README.md` already exists:
+  - Check for any new or updated files under `docs/` since the last session
+  - If changes exist: find the relevant section and update it, or create a new section if none exists
+  - Do not duplicate content — only add pointers
 
-### Step 5: Clear Active Session
+### Step 6: Clear Active Session
 
-Delete or clear the `.amazonq/.sessions/.current-session` file.
+Empty the contents of `.amazonq/.sessions/.current-session` (do not delete the file).
 
-### Step 6: Confirm Completion
+### Step 7: Confirm Completion
 
 Inform the user:
 - Session has been closed

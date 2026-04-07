@@ -30,6 +30,7 @@ xcopy /E /I prompts %USERPROFILE%\.aws\amazonq\prompts
 @session-end
 @session-current
 @session-list
+@session-help
 ```
 
 ### Git Operations
@@ -57,7 +58,8 @@ prompts/
 │   ├── session-update.md
 │   ├── session-end.md
 │   ├── session-current.md
-│   └── session-list.md
+│   ├── session-list.md
+│   └── session-help.md
 └── git/
     ├── git-commit.md
     ├── git-merge-cleanup.md

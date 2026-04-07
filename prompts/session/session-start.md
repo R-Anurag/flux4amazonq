@@ -47,7 +47,7 @@ git checkout -b [session_name]
 
 ### Step 4: Initialize Session File
 
-Generate a `session_id` using format: `YYYY-MM-DD-HHMM` (e.g., `2024-01-15-1430`)
+Generate a `session_id` in format `YYYY-MM-DD-HHMM` by running `git log -1 --format=%cd --date=format:'%Y-%m-%d-%H%M' 2>/dev/null` to get a recent timestamp reference, or ask the user to confirm the current date and time if git log is unavailable or the repo has no commits.
 
 Create session file at `.amazonq/.sessions/[session_id]-[session_name].md` with:
 

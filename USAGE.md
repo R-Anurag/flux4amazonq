@@ -140,6 +140,13 @@ Shows all past and present sessions.
 
 Shows active session details and recent progress.
 
+**Get Help:**
+```
+@session-help
+```
+
+Shows all available session commands and best practices.
+
 ## Best Practices
 
 ### Session Goals

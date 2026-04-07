@@ -37,4 +37,4 @@ Use @session-update to add progress
 Use @session-end to complete the session
 ```
 
-Calculate duration from start time to current time.
+Calculate duration from the start timestamp recorded in the session file to the most recent update timestamp. Note that this is approximate based on recorded timestamps.

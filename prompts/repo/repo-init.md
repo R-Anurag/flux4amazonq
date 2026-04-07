@@ -48,6 +48,15 @@ This file provides guidance to Amazon Q when working with code in this repositor
 - Project documentation: [docs/README.md](docs/README.md)
 - Lessons learned and pitfalls: [docs/LESSONS.md](docs/LESSONS.md)
 
+## Development Workflow
+
+**ALWAYS**:
+1. Start a session with `@session-start` before beginning any significant work
+2. Provide the session goal clearly so context can be primed appropriately
+3. Run `@session-update` at meaningful checkpoints during development
+4. Use `@git-commit` to create well-formatted atomic commits
+5. End every session with `@session-end` to capture learnings
+
 ## Development Guidelines
 
 - Always review code changes before committing

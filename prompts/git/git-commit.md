@@ -55,9 +55,10 @@ Run `git status` to see what's staged.
 
 ### Step 2: Understand Context
 
-1. Read `.amazonq/.sessions/.current-session` to get active session file
-2. Read the session file to understand what work is being done
-3. Run `git diff --staged` to see the actual code changes
+1. Read `.amazonq/.sessions/.current-session` to get the active session filename
+2. If the file exists and is non-empty, read the session file to understand what work is being done
+3. If no active session exists, proceed without session context
+4. Run `git diff --staged` to see the actual code changes
 
 ### Step 3: Analyze Changes
 
